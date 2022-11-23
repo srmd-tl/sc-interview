@@ -21,6 +21,20 @@ class CreateTollsTable extends Migration {
 
             $table->string( 'plate_number' )
                   ->comment( 'vehicle plate number' );
+
+            $table->double( 'distance_cost' )
+                 ->default( 0.0 )
+                  ->comment( 'distance cost' );
+            $table->integer( 'discount' )
+                  ->default( 0 )
+                  ->comment( 'discount by days/plate ruleset' );
+
+            $table->double( 'sub_total' )
+                  ->default( 0.0 )
+                  ->comment( 'subtotal' );
+            $table->double( 'total' )
+                  ->default( 0.0 )
+                  ->comment( 'total bill to charge' );
             $table->timestamps();
 
             //foreign keys
