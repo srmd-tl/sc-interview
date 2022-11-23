@@ -1,5 +1,5 @@
 <h1>
-Smash Cloud Interview Assignmnent
+Smash Cloud Interview Assignment
 <hr>
 </h1>
 Add proper mysql configs in env and then.
